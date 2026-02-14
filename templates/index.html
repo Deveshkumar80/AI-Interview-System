@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Interview Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>⚡ AI Interview</h2>
+    <p>Mock Practice</p>
+</div>
+
+<div class="main">
+
+    <div class="card">
+        <h2 id="progressText">Question 0/10</h2>
+
+        <div class="progress">
+            <div class="bar" id="progressBar"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 id="question">Click Start</h3>
+    </div>
+
+    <div class="card">
+
+        <textarea id="answer" placeholder="Type or speak your answer..."></textarea>
+
+        <div class="btns">
+            <button onclick="startMic()">🎤 Mic</button>
+            <button onclick="submitAnswer()">Submit</button>
+            <button onclick="nextQuestion()">Next ➡</button>
+        </div>
+
+    </div>
+
+    <div class="card result">
+        <h3 id="result"></h3>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(to right, #020617, #0f172a);
+    color: white;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #020617;
+    position: fixed;
+    padding: 20px;
+    border-right: 1px solid #1e293b;
+}
+
+/* Main */
+.main {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+/* Cards */
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Progress bar */
+.progress {
+    height: 10px;
+    background: #334155;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.bar {
+    height: 10px;
+    background: #22c55e;
+    width: 0%;
+    border-radius: 5px;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+/* Buttons */
+.btns {
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #22c55e;
+    color: black;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #16a34a;
+}
+
+/* Result */
+.result {
+    background: #020617;
+    border: 1px solid #22c55e;
+}
